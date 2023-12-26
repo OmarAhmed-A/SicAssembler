@@ -1,58 +1,42 @@
-# SIC Assembler for Object Program Generation
+# Simplified Instructional Computer (SIC) Assembler
 
-This repository contains an assembler for the Simplified Instructional Computer (SIC), which translates assembly code into machine code and produces an object program.
+This repository contains an assembler for the Simplified Instructional Computer (SIC), a hypothetical computer architecture. The assembler translates assembly code written for the SIC architecture into machine code, generating an object program that can be executed on the SIC machine.
 
-## Directory Structure
+## Features
 
-- `sic/`: This directory contains assembly language programs written for the Simplified Instructional Computer (SIC). The `sicAssembly.c` file is a SIC assembler that reads assembly code and generates an object program.
+- **Assembler:** The main component of the repository is the SIC assembler, implemented in the `sicAssembly.c` file. It reads assembly code from input files (e.g., `Program1.asm`, `Program2.asm`) and produces the corresponding object program using the `OPTable.instr` to map assembly instructions to machine code.
 
-## How to Run
+## How to Use
 
-To run the SIC assembler, execute the following steps:
-
-1. Compile the `sicAssembly.c` file:
+1. **Compile:** Use a C compiler (e.g., gcc) to compile the `sicAssembly.c` file.
 
     ```bash
     gcc sic/sicAssembly.c -o sicAssembler
     ```
 
-2. Run the assembler with the desired program file:
+2. **Run:** Execute the compiled assembler, providing the desired program file.
 
     ```bash
     ./sicAssembler <program_file>
     ```
 
-    If no program file is provided, the assembler will default to using "Program1.asm."
+    If no program file is provided, the assembler defaults to using "Program1.asm."
 
-3. The assembler will perform two passes: PASS1 and PASS2.
-
-   - **PASS1**: Reads and processes the assembly code to generate intermediate files.
-   - **PASS2**: Generates the object program using the intermediate files.
-
-4. Optionally, you can use the `--clean` flag to remove intermediate files:
+3. **Optional Cleanup:** To remove intermediate files generated during assembly, use the `--clean` flag.
 
     ```bash
     ./sicAssembler <program_file> --clean
     ```
 
-    This step is useful to clean up temporary files generated during the assembly process.
-
-## Usage
-
-```bash
-./sicAssembler <program_file> [--clean]
-```
-
-If no `<program_file>` is provided, the assembler will use the default "Program1.asm."
-
-## Example
-
-```bash
-./sicAssembler Program2.asm
-```
-
-This command will assemble "Program2.asm" and generate the corresponding object program. If the `--clean` flag is included, it will also remove intermediate files.
-
 ## Dependencies
 
-This project requires a C compiler (e.g., gcc) to compile the `sicAssembly.c` file.
+- C compiler (e.g., gcc) for compiling the SIC assembler.
+- Input assembly code files (e.g., `Program1.asm`, `Program2.asm`) written for the SIC architecture.
+
+## Notes
+
+- The SIC assembler processes assembly code and generates an object program suitable for execution on the Simplified Instructional Computer.
+- Check specific program files and the `OPTable.instr` for details on supported instructions and their corresponding machine code.
+- Explore the `sic/` directory for example SIC assembly programs and experiment with the assembler for a hands-on experience.
+
+Feel free to delve into the repository, explore the source code, and experiment with SIC assembly programming!
