@@ -5,13 +5,10 @@ This repository contains an assembler for the Simplified Instructional Computer 
 ## Project Contributors
 
 Presented by:
-- Anton Ashraf
-- Omar Ahmed
+- [Anton Ashraf](https://github.com/AntonAshraf)
+- [Omar Ahmed](https://github.com/OmarAhmed-A)
 - Salma Ismail
-- Marwan Hazem
-
-Under the supervision of:
-Dr. Nsrin Ashraf
+- [Marwan Hazem](https://github.com/Zafaranii)
 
 A big thank you to these amazing contributors for their dedication and hard work! 🚀✨
 
