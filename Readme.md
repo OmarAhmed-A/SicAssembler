@@ -2,6 +2,19 @@
 
 This repository contains an assembler for the Simplified Instructional Computer (SIC), a hypothetical computer architecture. The assembler translates assembly code written for the SIC architecture into machine code, generating an object program that can be executed on the SIC machine.
 
+## Project Contributors
+
+Presented by:
+- Anton Ashraf
+- Omar Ahmed
+- Salma Ismail
+- Marwan Hazem
+
+Under the supervision of:
+Dr. Nsrin Ashraf
+
+A big thank you to these amazing contributors for their dedication and hard work! 🚀✨
+
 ## Features
 
 - **Assembler:** The main component of the repository is the SIC assembler, implemented in the `sicAssembly.c` file. It reads assembly code from input files (e.g., `Program1.asm`, `Program2.asm`) and produces the corresponding object program using the `OPTable.instr` to map assembly instructions to machine code.
